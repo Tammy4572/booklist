@@ -10,7 +10,7 @@ class BookList extends Component {
   render() {
 
     //must create a map function here to return the following:
-    let selectBook = this.props.books.map((book) => {
+    let books = this.props.books.map((book) => {
          return (
               <li
                    key={book.id}
@@ -21,7 +21,7 @@ class BookList extends Component {
 
     return (
       <ul className="list-group col-sm-4">
-        {selectBook}
+        {books}
       </ul>
     );
   }
